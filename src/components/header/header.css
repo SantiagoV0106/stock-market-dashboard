@@ -1,0 +1,100 @@
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 55px 30px 30px;
+    background-color: var(--white-color);
+}
+
+.main-header .input-group {
+    position: relative;
+}
+
+.main-header .input-group input {
+    width: 400px;
+    padding: 12px 45px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    color: var(--grey-color);
+}
+
+.main-header .input-group input::placeholder {
+    color: var(--grey-color);
+}
+
+.main-header .input-group i {
+    font-size: 1.25rem;
+    color: var(--grey-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    left: 1.20rem
+}
+
+.nav-header {
+    display: flex;
+    gap: 0 1.5rem;
+    align-items: center;
+}
+
+.nav-header i {
+    font-size: 1.5rem;
+}
+
+.nav-header .notification {
+    position: relative;
+}
+
+.nav-header .notification::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    border: 2px solid var(--white-color);
+    background-color: var(--secondary-red-color);
+}
+
+
+.nav-header ul {
+    display: flex;
+    gap: 0 1.125rem;
+    list-style-type: none;
+    position: relative;
+    padding: 0 1.5rem;
+}
+
+.nav-header ul::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 65%;
+    width: 1px;
+    border-radius: 100%;
+    background-color: var(--grey-color);
+}
+
+.profile img {
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.profile,
+.profile figure,
+.profile figcaption {
+    display: flex;
+    align-items: center;
+    gap: 0 1.125rem;
+}
+
+.profile figcaption {
+    font-weight: 600;
+}

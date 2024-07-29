@@ -1,0 +1,44 @@
+#root {
+    height: 100svh;
+    display: grid;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 280px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main-header {
+    grid-area: header;
+}
+
+.main-content {
+    display: grid;
+    grid-area: main;
+    grid-template-areas:
+        "title title"
+        "banner banner"
+        "company watchlist";
+    grid-template-rows: auto 180px 1fr;
+    padding: 36px 52px 46px 36px;
+    background-color: var(--bg-color);
+}
+
+.title {
+    grid-area: title;
+}
+
+.banner {
+    grid-area: banner;
+    border-radius: 10px;
+    height: inherit;
+    background-color: var(--white-color);
+}
+
+.company {
+    grid-area: company;
+}
